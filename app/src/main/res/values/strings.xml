@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GoogleBookListApp</string>
+    <string name="enter_book_name">Enter the book name</string>
+    <string name="search">Search</string>
 </resources>

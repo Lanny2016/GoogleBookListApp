@@ -4,16 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".MainActivity">
-    <TextView
-        android:id="@+id/textView_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click to display the value"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:onClick="Display"
-        tools:ignore="OnClick" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <EditText
+       android:id="@+id/edit_query"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:hint="@string/enter_book_name"/>
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/edit_query"
+            android:text="@string/search"
+            android:onClick="Display"/>
+    </LinearLayout>
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
