@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
     public void Display (View view){
         // creating an ArrayList
@@ -40,6 +39,5 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView)findViewById(R.id.listView);
         // setting the arrayAdapter to the listView
         listView.setAdapter(arrayAdapter);
-
     }
 }
