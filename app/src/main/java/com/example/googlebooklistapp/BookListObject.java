@@ -19,7 +19,6 @@ public class BookListObject {
      * @param mThumbNail is the image from source api
      * @param mTitle is the title of the book from source api
      * @param mAuthor is the author name from source api
-     *                           earthquake happened
      * @param mDescription is the description of the book from source api
      */
     public BookListObject(String mThumbNail, String mTitle, String mAuthor, String mDescription) {
